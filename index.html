@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdelrhman Raed - Web Developer Portfolio. Passionate about digital work, technology, and creating solutions that make an impact. Proficient in HTML, CSS, and Java.">
+  <meta name="keywords" content="Abdelrhman Raed, Abdelrhman Raed portfolio, Web Developer, HTML, CSS, Java, Front-End Developer, Software Developer">
+  <meta name="author" content="Abdelrhman Raed">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Abdelrhman Raed — Web Developer Portfolio">
+  <meta property="og:description" content="Passionate about digital work, technology, and creating solutions that make an impact. Proficient in HTML, CSS, and Java.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile_developer.jpg">
+
+  <title>Abdelrhman Raed | Web Developer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Interactive Particle Canvas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Cursor Spotlight Glow Effect -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom-right" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+  <!-- ==================== 1. NAVIGATION BAR ==================== -->
+  <header class="site-header" id="header">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Abdelrhman Raed Home">
+        <span class="logo-accent-bracket">&lt;</span>
+        <span class="logo-text">AR<span class="logo-dot">.</span></span>
+        <span class="logo-accent-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item nav-item-cta">
+          <a href="cv.pdf" download="cv.pdf" class="btn btn-nav-download" id="nav-download-btn">
+            <i data-lucide="file-down" class="btn-icon"></i>
+            <span>Download CV</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <!-- Elegant Rectangular Hero Card with vivid purple top gradient fading to deep black -->
+        <div class="hero-card" id="hero-card">
+          <div class="hero-card-glow" aria-hidden="true"></div>
+          <div class="hero-card-header-badge">
+            <span class="status-indicator"></span>
+            <span>Available for new projects</span>
+          </div>
+
+          <div class="hero-content">
+            <h1 class="hero-title">
+              <span class="hero-name">Abdelrhman Raed</span>
+            </h1>
+
+            <div class="hero-spelling-badge">
+              <span class="spelling-text">RAED — R-A-E-D</span>
+            </div>
+
+            <div class="hero-role-wrapper">
+              <h2 class="hero-role">
+                <span class="role-prefix">I am a</span>
+                <span class="role-highlight">Web Developer</span>
+              </h2>
+            </div>
+
+            <p class="hero-intro">
+              &ldquo;I’m Abdelrhman, passionate about digital work, technology, and creating solutions that make an impact.&rdquo;
+            </p>
+
+            <!-- 3 CTA Buttons Cluster -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary" id="hero-view-work-btn">
+                <span class="btn-shine"></span>
+                <i data-lucide="sparkles" class="btn-icon"></i>
+                <span>View My Work</span>
+              </a>
+
+              <a href="#contact" class="btn btn-outline" id="hero-contact-btn">
+                <i data-lucide="send" class="btn-icon"></i>
+                <span>Contact Me</span>
+              </a>
+
+              <a href="cv.pdf" download="cv.pdf" class="btn btn-secondary" id="hero-download-cv-btn">
+                <i data-lucide="download" class="btn-icon"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <!-- Quick Tech Pills -->
+            <div class="hero-tech-pills">
+              <span class="tech-pill"><i data-lucide="code-2"></i> HTML5</span>
+              <span class="tech-pill"><i data-lucide="palette"></i> CSS3</span>
+              <span class="tech-pill"><i data-lucide="coffee"></i> Java</span>
+              <span class="tech-pill"><i data-lucide="layout"></i> Responsive UI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Scroll Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+          <span class="scroll-mouse">
+            <span class="scroll-wheel"></span>
+          </span>
+          <span class="scroll-text">Scroll Down</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== 3. ABOUT ME ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="user"></i> About Me</div>
+          <h2 class="section-title">Crafting Clean & <span class="text-gradient">Impactful Solutions</span></h2>
+          <p class="section-subtitle">A glimpse into my background, development mindset, and core values.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Visual Profile Card -->
+          <div class="about-visual-column">
+            <div class="about-visual-card">
+              <div class="profile-image-container">
+                <img src="assets/profile_developer.jpg" alt="Abdelrhman Raed - Web Developer Workstation" class="profile-img" loading="lazy">
+                <div class="profile-overlay-badge">
+                  <i data-lucide="terminal" class="badge-icon"></i>
+                  <span>Code & Design</span>
+                </div>
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge badge-html" aria-hidden="true">
+                <span class="badge-dot"></span>
+                <span>&lt;HTML5/&gt;</span>
+              </div>
+              <div class="floating-badge badge-css" aria-hidden="true">
+                <span class="badge-dot"></span>
+                <span>{ CSS3 }</span>
+              </div>
+              <div class="floating-badge badge-java" aria-hidden="true">
+                <span class="badge-dot"></span>
+                <span>Java ☕</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Glassmorphic Content Card -->
+          <div class="about-content-column">
+            <div class="glass-card about-card">
+              <div class="about-statement-box">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <blockquote class="about-statement">
+                  &ldquo;I believe I am proficient in using certain programming languages, such as HTML, CSS, and Java.&rdquo;
+                </blockquote>
+              </div>
+
+              <p class="about-description">
+                As a dedicated web developer, I combine structured coding standards with modern aesthetic sensibilities. My objective is to craft digital experiences that are not only visually engaging with smooth micro-interactions, but also high-performing, accessible, and structured for long-term scalability.
+              </p>
+
+              <div class="about-highlights-grid">
+                <div class="highlight-item">
+                  <div class="highlight-icon-wrapper">
+                    <i data-lucide="laptop" class="highlight-icon"></i>
+                  </div>
+                  <div class="highlight-info">
+                    <h4>Web Development</h4>
+                    <p>Clean, semantic code structure & modern layouts</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-icon-wrapper">
+                    <i data-lucide="smartphone" class="highlight-icon"></i>
+                  </div>
+                  <div class="highlight-info">
+                    <h4>Responsive Design</h4>
+                    <p>Flawless adaptation across mobile, tablet & desktop</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-icon-wrapper">
+                    <i data-lucide="zap" class="highlight-icon"></i>
+                  </div>
+                  <div class="highlight-info">
+                    <h4>Performance First</h4>
+                    <p>Smooth 60fps animations & optimized loading</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-icon-wrapper">
+                    <i data-lucide="check-circle-2" class="highlight-icon"></i>
+                  </div>
+                  <div class="highlight-info">
+                    <h4>Problem Solving</h4>
+                    <p>Logical reasoning rooted in Java & software architecture</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-footer-actions">
+                <a href="#contact" class="btn btn-outline">
+                  <i data-lucide="mail"></i>
+                  <span>Let's Connect</span>
+                </a>
+                <a href="cv.pdf" download="cv.pdf" class="btn btn-glass">
+                  <i data-lucide="file-text"></i>
+                  <span>Download Resume</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. SKILLS ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="cpu"></i> Capabilities</div>
+          <h2 class="section-title">Technical <span class="text-gradient">Proficiencies</span></h2>
+          <p class="section-subtitle">Core technologies and specializations I leverage to build modern web solutions.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: HTML -->
+          <div class="skill-card" data-skill="html">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="file-code" class="skill-icon"></i>
+            </div>
+            <div class="skill-content">
+              <div class="skill-header-row">
+                <h3 class="skill-name">HTML</h3>
+                <span class="skill-percent">95%</span>
+              </div>
+              <p class="skill-desc">Semantic structure, modern HTML5 tags, accessibility (a11y), and SEO-optimized web standards.</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="--target-width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: CSS -->
+          <div class="skill-card" data-skill="css">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="palette" class="skill-icon"></i>
+            </div>
+            <div class="skill-content">
+              <div class="skill-header-row">
+                <h3 class="skill-name">CSS</h3>
+                <span class="skill-percent">92%</span>
+              </div>
+              <p class="skill-desc">CSS3 animations, Flexbox, Grid systems, glassmorphism, variables, and modern dark themes.</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="--target-width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: Java -->
+          <div class="skill-card" data-skill="java">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="coffee" class="skill-icon"></i>
+            </div>
+            <div class="skill-content">
+              <div class="skill-header-row">
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-percent">88%</span>
+              </div>
+              <p class="skill-desc">Core Object-Oriented Programming (OOP), data structures, algorithms, and modular backend logic.</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="--target-width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Web Development -->
+          <div class="skill-card" data-skill="webdev">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="globe" class="skill-icon"></i>
+            </div>
+            <div class="skill-content">
+              <div class="skill-header-row">
+                <h3 class="skill-name">Web Development</h3>
+                <span class="skill-percent">90%</span>
+              </div>
+              <p class="skill-desc">End-to-end architecture, interactive JavaScript functionality, clean modular architecture, and API integration.</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="--target-width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Responsive Design -->
+          <div class="skill-card skill-card-wide" data-skill="responsive">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="smartphone" class="skill-icon"></i>
+            </div>
+            <div class="skill-content">
+              <div class="skill-header-row">
+                <h3 class="skill-name">Responsive Design</h3>
+                <span class="skill-percent">94%</span>
+              </div>
+              <p class="skill-desc">Mobile-first methodologies, dynamic fluid typography, adaptive layouts, and cross-browser consistency across all screen resolutions.</p>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" style="--target-width: 94%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. PROJECTS ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="folder-git-2"></i> Portfolio Showcase</div>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-subtitle">A collection of responsive web applications and developer tools built with high attention to detail.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-project-id="1">
+            <div class="project-image-wrapper">
+              <img src="assets/project_ecommerce.jpg" alt="Quantum E-Commerce Hub Interface" class="project-image" loading="lazy">
+              <div class="project-image-overlay">
+                <button class="btn btn-circle view-project-trigger" data-project="1" aria-label="View Quantum E-Commerce details">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <h3 class="project-title">Quantum E-Commerce Hub</h3>
+              <p class="project-description">
+                A sleek, dark-mode electronic commerce dashboard with real-time sales overview, dynamic product grids, and interactive cart mechanics.
+              </p>
+              <div class="project-footer">
+                <button class="btn btn-outline-sm view-project-trigger" data-project="1">
+                  <span>View Project</span>
+                  <i data-lucide="arrow-up-right" class="btn-icon-sm"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-project-id="2">
+            <div class="project-image-wrapper">
+              <img src="assets/project_analytics.jpg" alt="Real-Time Analytics Platform Interface" class="project-image" loading="lazy">
+              <div class="project-image-overlay">
+                <button class="btn btn-circle view-project-trigger" data-project="2" aria-label="View Analytics Overview details">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Web Development</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">SaaS Analytics Overview</h3>
+              <p class="project-description">
+                Real-time data visualization dashboard featuring glowing interactive charts, live visitor traffic tracking, and responsive metric cards.
+              </p>
+              <div class="project-footer">
+                <button class="btn btn-outline-sm view-project-trigger" data-project="2">
+                  <span>View Project</span>
+                  <i data-lucide="arrow-up-right" class="btn-icon-sm"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-project-id="3">
+            <div class="project-image-wrapper">
+              <img src="assets/project_tasks.jpg" alt="Quantum Flux Task Manager Interface" class="project-image" loading="lazy">
+              <div class="project-image-overlay">
+                <button class="btn btn-circle view-project-trigger" data-project="3" aria-label="View Quantum Flux details">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Java Core</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">Glassmorphism</span>
+              </div>
+              <h3 class="project-title">Quantum Flux Task Suite</h3>
+              <p class="project-description">
+                Agile Kanban workspace for team workflow management, status filtering, progress tracking, and seamless team collaboration.
+              </p>
+              <div class="project-footer">
+                <button class="btn btn-outline-sm view-project-trigger" data-project="3">
+                  <span>View Project</span>
+                  <i data-lucide="arrow-up-right" class="btn-icon-sm"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-project-id="4">
+            <div class="project-image-wrapper">
+              <img src="assets/project_devhub.jpg" alt="CodeForge Java & Web Playground" class="project-image" loading="lazy">
+              <div class="project-image-overlay">
+                <button class="btn btn-circle view-project-trigger" data-project="4" aria-label="View CodeForge details">
+                  <i data-lucide="external-link"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <h3 class="project-title">CodeForge Interactive Playground</h3>
+              <p class="project-description">
+                Dual-pane developer sandbox combining Java backend code testing and live HTML/CSS interface preview with instant compilation feedback.
+              </p>
+              <div class="project-footer">
+                <button class="btn btn-outline-sm view-project-trigger" data-project="4">
+                  <span>View Project</span>
+                  <i data-lucide="arrow-up-right" class="btn-icon-sm"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- View All Projects Button -->
+        <div class="projects-cta-wrapper">
+          <button class="btn btn-primary btn-large" id="view-all-projects-btn">
+            <span class="btn-shine"></span>
+            <i data-lucide="layers" class="btn-icon"></i>
+            <span>View All Projects</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. CONTACT ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i data-lucide="message-square"></i> Get In Touch</div>
+          <h2 class="section-title">Let’s Start a <span class="text-gradient">Conversation</span></h2>
+          <p class="section-subtitle">Have a project idea, question, or opportunity? Feel free to reach out anytime.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Details & Socials -->
+          <div class="contact-info-column">
+            <div class="glass-card contact-info-card">
+              <h3 class="contact-info-title">Contact Information</h3>
+              <p class="contact-info-desc">
+                I am always open to discussing new web development projects, creative ideas, or opportunities to collaborate.
+              </p>
+
+              <div class="contact-details-list">
+                <!-- Email Item -->
+                <a href="mailto:abdelrhmanraed0@gmail.com" class="contact-item">
+                  <div class="contact-item-icon">
+                    <i data-lucide="mail"></i>
+                  </div>
+                  <div class="contact-item-content">
+                    <span class="contact-item-label">Direct Email</span>
+                    <span class="contact-item-value">abdelrhmanraed0@gmail.com</span>
+                  </div>
+                </a>
+
+                <!-- Phone Item -->
+                <a href="tel:01120400818" class="contact-item">
+                  <div class="contact-item-icon">
+                    <i data-lucide="phone"></i>
+                  </div>
+                  <div class="contact-item-content">
+                    <span class="contact-item-label">Phone / WhatsApp</span>
+                    <span class="contact-item-value">01120400818</span>
+                  </div>
+                </a>
+
+                <!-- Location / Timezone -->
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i data-lucide="map-pin"></i>
+                  </div>
+                  <div class="contact-item-content">
+                    <span class="contact-item-label">Availability</span>
+                    <span class="contact-item-value">Remote & Worldwide Collaboration</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Profiles -->
+              <div class="contact-socials-wrapper">
+                <span class="socials-heading">Connect on Social Platforms</span>
+                <div class="social-links">
+                  <!-- GitHub -->
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                    <i data-lucide="github"></i>
+                  </a>
+                  <!-- LinkedIn -->
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                    <i data-lucide="linkedin"></i>
+                  </a>
+                  <!-- Email Direct -->
+                  <a href="mailto:abdelrhmanraed0@gmail.com" class="social-btn" aria-label="Send Direct Email">
+                    <i data-lucide="mail"></i>
+                  </a>
+                  <!-- Phone / WhatsApp -->
+                  <a href="https://wa.me/201120400818" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Chat on WhatsApp">
+                    <i data-lucide="message-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="contact-form-column">
+            <div class="glass-card contact-form-card">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-subtitle">Fill out the form below and I will get back to you promptly.</p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="form-name" class="form-label">
+                    <span>Your Name</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i data-lucide="user" class="input-icon"></i>
+                    <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. John Smith" required autocomplete="name">
+                  </div>
+                  <span class="field-error" id="name-error"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="form-email" class="form-label">
+                    <span>Your Email Address</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <i data-lucide="at-sign" class="input-icon"></i>
+                    <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. john@example.com" required autocomplete="email">
+                  </div>
+                  <span class="field-error" id="email-error"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="form-message" class="form-label">
+                    <span>Your Message</span>
+                    <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrapper input-wrapper-textarea">
+                    <i data-lucide="message-square" class="input-icon"></i>
+                    <textarea id="form-message" name="message" class="form-input form-textarea" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+                  </div>
+                  <span class="field-error" id="message-error"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+                  <span class="btn-shine"></span>
+                  <i data-lucide="send" class="btn-icon"></i>
+                  <span class="submit-text">Send Message</span>
+                  <span class="submit-loader" aria-hidden="true"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-accent-bracket">&lt;</span>
+          <span class="logo-text">AR<span class="logo-dot">.</span></span>
+          <span class="logo-accent-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Building clean, scalable, and responsive digital solutions.</p>
+      </div>
+
+      <div class="footer-credits">
+        <p class="footer-name">Designed & Developed by <strong>Abdelrhman Raed</strong></p>
+        <p class="footer-spelling">RAED — R-A-E-D</p>
+        <p class="footer-copy">&copy; <span id="current-year"></span> Abdelrhman Raed. All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-actions">
+        <a href="#home" class="btn btn-circle back-to-top-btn" id="back-to-top" aria-label="Back to top">
+          <i data-lucide="chevron-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="modal-body" id="modal-body-content">
+        <!-- Content dynamically injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
